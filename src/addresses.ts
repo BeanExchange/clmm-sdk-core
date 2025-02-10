@@ -47,7 +47,8 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.BNB]: '0x8909Dc15e40173Ff4699343b6eB8132c65e18eC6',
   [ChainId.POLYGON]: '0x9e5A52f57b3038F1B8EeE45F28b3C1967e22799C',
   [ChainId.CELO]: '0x79a530c8e2fA8748B7B40dd3629C0520c2cCf03f',
-  [ChainId.BLAST]: '0x5C346464d33F90bABaf70dB6388507CC889C1070'
+  [ChainId.BLAST]: '0x5C346464d33F90bABaf70dB6388507CC889C1070',
+  [ChainId.MONAD_TESTNET]: '0x458B93496c6c8b6766cb2a7561baD2384daB1B6C',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -62,7 +63,8 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.AVALANCHE]: '0x4752ba5dbc23f44d87826276bf6fd6b1c372ad24',
   [ChainId.BNB]: '0x4752ba5dbc23f44d87826276bf6fd6b1c372ad24',
   [ChainId.POLYGON]: '0xedf6066a2b290c185783862c7f4776a2c8077ad1',
-  [ChainId.BLAST]: '0xBB66Eb1c5e875933D44DAe661dbD80e5D9B03035'
+  [ChainId.BLAST]: '0xBB66Eb1c5e875933D44DAe661dbD80e5D9B03035',
+  [ChainId.MONAD_TESTNET]: '0xE70Bd7158c01015726D6b32ccB896B36D5a4ED48'
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -235,6 +237,16 @@ const BLAST_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x549FEB8c9bd4c12Ad2AB27022dA12492aC452B66'
 }
 
+const MONAD_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x1FCF866cDa0C5BBdc316C434A1B0C52023951033',
+  multicallAddress: '0xA334E5e8CE91028b26844783343e162Cb986071C',
+  quoterAddress: '0x0AC7AAbd9400a45Dff5Fa1aBAf3dcF72Da8E5F4C',
+  v3MigratorAddress: '0x95A84F34B7c14007537Ce5D1d4B08E6E81512FCB',
+  nonfungiblePositionManagerAddress: '0x4BdeF0B92dA5FacF3c36169163a1904eD709ebd0',
+  tickLensAddress: '0x52b617dc3F6094051fa661f73ff59FDF28A2785e',
+  swapRouter02Address: '0xff1Eb32CE21962c25E2b24c9F8A13E0abDAf0B7F'
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -256,7 +268,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.ZORA]: ZORA_ADDRESSES,
   [ChainId.ZORA_SEPOLIA]: ZORA_SEPOLIA_ADDRESSES,
   [ChainId.ROOTSTOCK]: ROOTSTOCK_ADDRESSES,
-  [ChainId.BLAST]: BLAST_ADDRESSES
+  [ChainId.BLAST]: BLAST_ADDRESSES,
+  [ChainId.MONAD_TESTNET]: MONAD_TESTNET_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
